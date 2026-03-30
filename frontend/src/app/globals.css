@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Tailwind v4 CSS-first configuration */
+@theme {
+  --color-background: #F9F8F6; /* Warm off-white */
+  --color-foreground: #2C2C2C; /* Charcoal */
+  --color-sage: #8A9A86;       /* Primary action color */
+  --color-terra: #C28C7E;      /* Secondary action/alerts */
+  --color-muted: #7A7A7A;
+}
+
+/* Custom variable for arbitrary values used in our components */
+:root {
+  --border-light: #E5E5E5;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* A custom utility class for our minimalist cards */
+@layer components {
+  .japandi-card {
+    @apply bg-white border border-[var(--border-light)] rounded-sm p-6 transition-all duration-300 hover:shadow-sm;
+  }
+}
