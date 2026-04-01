@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <Navbar />
         {/* The 'children' prop is whatever page the user is currently on */}
-        <main className="flex-grow max-w-6xl mx-auto w-full px-4 py-12">
+        <main className="grow max-w-6xl mx-auto w-full px-4 py-12">
           {children}
         </main>
       </body>

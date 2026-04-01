@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="w-full border-b border-[var(--border-light)] bg-transparent py-4">
+    <nav className="w-full border-b border-(--border-light) bg-transparent py-4">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         {/* Brand */}
         <Link href="/" className="text-xl font-serif tracking-tight font-semibold text-foreground">

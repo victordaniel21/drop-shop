@@ -1,6 +1,7 @@
 // src/lib/api.ts
 
-const API_BASE_URL = 'http://localhost:8080/api';
+// Bypass Node's IPv6 resolution by using the explicit IPv4 address
+const API_BASE_URL = 'http://127.0.0.1:8080/api';
 
 // Define the TypeScript interface so we get autocomplete for our Product
 export interface Product {
